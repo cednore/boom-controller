@@ -1,0 +1,8 @@
+
+// Namespace '[new_nsp_name]'
+Route::group(['prefix' => ionsp('[new_nsp_name]')], function() {
+    Route::post(ioevn('connect'), '[NewNspName]Controller@connect');
+    Route::post(ioevn('disconnecting'), '[NewNspName]Controller@disconnecting');
+    Route::post(ioevn('disconnect'), '[NewNspName]Controller@disconnect');
+    Route::post(ioevn('error'), '[NewNspName]Controller@error');
+});

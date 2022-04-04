@@ -1,0 +1,62 @@
+{
+    "name": "cednore/boom-controller",
+    "version": "0.0.1",
+    "description": "Booming server control interface for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "http://github.com/cednore/boom-controller.git",
+    "authors": [
+        {
+            "name": "cednore",
+            "email": "cednore@gmail.com"
+        }
+    ],
+    "keywords": [
+        "boom",
+        "boom-controller",
+        "boom-server",
+        "laravel",
+        "socket.io",
+        "php"
+    ],
+    "minimum-stability": "dev",
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "require": {
+        "php": ">=7.0.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "laravel/framework": "~5.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Boom\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+        },
+        "classmap": [
+        ]
+    },
+    "scripts": {
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Boom\\BoomControllerServiceProvider"
+            ],
+            "aliases": {
+                "Boom": "Boom\\Facades\\Boom"
+            }
+        }
+    }
+}
