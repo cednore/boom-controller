@@ -39,7 +39,7 @@ return [
         // Authentication configurations
         'auth' => [
             // Auth token to be added on request header
-            'token' => env('BOOM_API_AUTH_TOKEN', 'DEFAULT_API_TOKEN'),
+            'token' => env('BOOM_API_AUTH_TOKEN', ''),
         ],
     ],
 
