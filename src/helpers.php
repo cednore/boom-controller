@@ -9,8 +9,6 @@ if (! function_exists('laravel_project_root_namespace')) {
      * Get root namespace name of current laravel project.
      *
      * @return string|null
-     *
-     *
      */
     function laravel_project_root_namespace() {
         $meta_path = base_path('composer.json');
@@ -33,8 +31,6 @@ if (! function_exists('safe_ioeventname')) {
      *
      * @param  string  $event
      * @return string
-     *
-     *
      */
     function safe_ioeventname(string $event) {
         return Str::slug($event);
@@ -49,8 +45,6 @@ if (! function_exists('ioevn')) {
      *
      * @param  string  $event
      * @return string
-     *
-     *
      */
     function ioevn(string $event) {
         return safe_ioeventname($event);
@@ -63,8 +57,6 @@ if (! function_exists('safe_ionspname')) {
      *
      * @param  string  $nsp
      * @return string
-     *
-     *
      */
     function safe_ionspname(string $nsp) {
         return Str::slug($nsp);
@@ -79,8 +71,6 @@ if (! function_exists('ionsp')) {
      *
      * @param  string  $nsp
      * @return string
-     *
-     *
      */
     function ionsp(string $nsp) {
         return safe_ionspname($nsp);
