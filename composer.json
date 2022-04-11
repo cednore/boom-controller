@@ -1,6 +1,6 @@
 {
     "name": "cednore/boom-controller",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "description": "Booming server control interface for Laravel",
     "type": "library",
     "license": "MIT",
