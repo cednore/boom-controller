@@ -54,9 +54,6 @@ class MakeNsp extends BaseCommand {
 
         // Create default controller file
         $this->createController();
-
-        // Re-optimize route cache
-        $this->callSilent('route:cache');
     }
 
 

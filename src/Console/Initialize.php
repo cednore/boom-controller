@@ -42,9 +42,6 @@ class Initialize extends BaseCommand {
         // Create route file
         $this->createRoute();
 
-        // Re-optimize config cache
-        $this->callSilent('config:cache');
-
         // Create root namespace
         $this->line('');
         $this->call('boom:make:nsp', [
