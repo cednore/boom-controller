@@ -37,7 +37,7 @@ class Server {
         if ('sockets' == $name) {
             return $this->of('/');
         } else {
-            return parent::_get($name);
+            return $this->{$name};
         }
     }
 
