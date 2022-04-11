@@ -1,6 +1,6 @@
 <?php
 
-namespace [BoomNamespace];
+namespace App\Http\Controllers\Boom;
 
 use Illuminate\Http\Request;
 

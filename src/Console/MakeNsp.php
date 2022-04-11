@@ -95,7 +95,7 @@ class MakeNsp extends BaseCommand {
         $controller = $this->makeControllerName($this->newNspName);
 
         // Prepare destination path
-        $dest = base_path(str_replace("\\", '/', config('boom.route.namespace')).'/'.$controller.'.php');
+        $dest = app_path('Http/Controllers/Boom/'.$controller.'.php');
         $this->createParentDirectory(dirname($dest));
 
         // If --force flag is not present and file exists, do nothing

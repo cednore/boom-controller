@@ -89,7 +89,7 @@ class BoomControllerServiceProvider extends ServiceProvider {
         if (file_exists($routes = base_path('routes/boom.php'))) {
             Route::prefix(config('boom.route.prefix'))
                 ->middleware(config('boom.route.middleware'))
-                ->namespace(config('boom.route.namespace'))
+                ->namespace('App\\Http\\Controllers\\Boom')
                 ->group($routes);
         }
     }

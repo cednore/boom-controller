@@ -79,7 +79,6 @@ class BaseCommand extends Command {
      */
     protected function prepareStub(string $stub, string $newNsp = null) {
         $stub = str_replace('[PrjNamespace]', laravel_project_root_namespace(), $stub);
-        $stub = str_replace('[BoomNamespace]', config('boom.route.namespace'), $stub);
 
         if (null != $newNsp) {
             $stub = str_replace('[new_nsp_name]', $newNsp, $stub);
