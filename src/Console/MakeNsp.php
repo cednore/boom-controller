@@ -3,8 +3,6 @@
 namespace Boom\Console;
 
 use Boom\Console\BaseCommand;
-use Illuminate\Support\Str;
-
 
 /**
  * Artisan command to make a new socket.io namespace handler.
@@ -97,7 +95,7 @@ class MakeNsp extends BaseCommand {
         $controller = $this->makeControllerName($this->newNspName);
 
         // Prepare destination path
-        $dest = base_path(Str::replace(config('boom.route.namespace'), "\\", '/').'/'.$controller.'.php');
+        $dest = base_path(str_replace("\\", '/', config('boom.route.namespace')).'/'.$controller.'.php');
         $this->createParentDirectory(dirname($dest));
 
         // If --force flag is not present and file exists, do nothing
