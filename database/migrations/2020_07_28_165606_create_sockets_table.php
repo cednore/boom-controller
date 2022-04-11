@@ -17,7 +17,7 @@ class CreateSocketsTable extends Migration {
     public function up() {
         // Create table
         Schema::connection(config('boom.db.connection') ?: config('database.default'))->create(
-            config('boom.database.tables.sockets'),
+            config('boom.db.tables.sockets'),
             function(Blueprint $table) {
                 // Columns
                 $table->string('id', 128);
@@ -42,6 +42,6 @@ class CreateSocketsTable extends Migration {
      */
     public function down() {
         Schema::connection(config('boom.db.connection') ?: config('database.default'))
-            ->dropIfExists(config('boom.database.tables.sockets'));
+            ->dropIfExists(config('boom.db.tables.sockets'));
     }
 }
