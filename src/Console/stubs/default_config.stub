@@ -59,7 +59,7 @@ return [
         // Authentication configurations
         'auth' => [
             // Auth token must be included on request header
-            'token' => env('BOOM_APP_AUTH_TOKEN', 'DEFAULT_APP_TOKEN'),
+            'token' => env('BOOM_APP_AUTH_TOKEN', ''),
         ],
     ],
 
